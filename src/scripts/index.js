@@ -4,6 +4,8 @@ import { getEvents} from "/src/scripts/services/event.js";
 
 import { user } from "/src/scripts/objects/user.js";
 import { screen } from "/src/scripts/objects/screen.js";
+import { repositories } from "/src/scripts/objects/Repositories.js";
+import { events } from "/src/scripts/objects/Events.js";
 
 document.getElementById('btn-search').addEventListener("click", () => {
   const userName = document.getElementById("input-search").value 
@@ -42,4 +44,6 @@ async function getUserData(userName) {
   user.setEvents(eventResponse)
   
   screen.renderUser(user) 
+  repositories.renderRepositories(user)
+  events.renderEvents(user)
 }

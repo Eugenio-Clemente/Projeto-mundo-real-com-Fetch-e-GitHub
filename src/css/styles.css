@@ -151,12 +151,6 @@ main {
   align-items: center;
 }
 
-.container .profile-data .following {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .container .profile-data .repositories h2{
   margin-bottom: 30px;
   text-align: center;
